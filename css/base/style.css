@@ -1,8 +1,44 @@
 body {
-	width: 600px;
 	background-color: #be846c;
 	text-align: center;
 }
+
+H2 {
+  color: white;
+  font-size: 17px;
+}
+
+#wrapper {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#result {
+  padding-top: 50px;
+}
+
+.block {
+  display: flex;
+  padding: 25px;
+  
+  width: 500px;
+}
+
+.details_container {
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;;
+}
+
+.poster {
+  height: 150px;
+}
+
+
 
 
 /* The Modal (background) */
