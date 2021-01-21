@@ -5,13 +5,13 @@
 
 ## Webapp
 
-Search and display films retrieved from IMDB
+Search and display films retrieved from IMDB database
 
 ## How to test
 
-[Request a free API key from IMDB](http://www.omdbapi.com/apikey.aspx)
+[Request a free API key from OMDB](http://www.omdbapi.com/apikey.aspx)
 
-Once received, store it in a .env at the root folder of the app.
+Once received, fill the information in script.js of the app.
 
 Open base.html from your web browser.
  
