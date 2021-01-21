@@ -11,9 +11,9 @@ Search and display films retrieved from IMDB database
 
 [Request a free API key from OMDB](http://www.omdbapi.com/apikey.aspx)
 
-Once received, fill the information in script.js of the app.
+Activate it and copy the key from the email you received.
 
-Open base.html from your web browser.
+[Acces the app](https://mathieu-superpose.github.io/FilmFinderJS/), fill your key and start browsing.
  
 ## Contributors
 

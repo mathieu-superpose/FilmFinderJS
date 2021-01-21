@@ -1,4 +1,4 @@
-const apikey = '';//fill your own api key
+const apikey = '285cd719';//fill your own api key
 const result = document.getElementById('result');
 let userquery = document.getElementById('searchbar');
 
@@ -30,7 +30,7 @@ const loadFilmList = (url) => {
 }
 
 const showFilmList = (selector, name, id, poster, year) => {
-  if(poster=='N/A')poster='../img/base/placeholder.jpg';
+  if(poster=='N/A')poster='./img/base/placeholder.jpg';
 	selector.innerHTML += `
         <div class='block'>
           <div class='poster_container'>
@@ -68,7 +68,7 @@ const openModal = (movie) => {
   let modal = document.getElementById('myModal');
   console.log(movie);
       let image = movie.Poster;
-      if(image == "N/A") image = "../img/base/placeholder.jpg";
+      if(image == "N/A") image = "./img/base/placeholder.jpg";
   modal.innerHTML =`
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
