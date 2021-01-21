@@ -9,7 +9,11 @@ Search and display films retrieved from IMDB
 
 ## How to test
 
-Open base.html from your web browser
+[Request a free API key from IMDB](http://www.omdbapi.com/apikey.aspx)
+
+Once received, store it in a .env at the root folder of the app.
+
+Open base.html from your web browser.
  
 ## Contributors
 
