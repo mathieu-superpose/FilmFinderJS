@@ -1,4 +1,4 @@
-const apikey = '';//fill your own api key
+const apikey = '285cd719';//fill your own api key
 const result = document.getElementById('result');
 let userquery = document.getElementById('searchbar');
 
@@ -67,14 +67,26 @@ const loadModal = (id) => {
 const openModal = (movie) => {
   let modal = document.getElementById('myModal');
   console.log(movie);
-      let image = movie['Poster'];
+      let image = movie.Poster;
       if(image == "N/A") image = "../img/base/placeholder.jpg";
   modal.innerHTML =`
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
     <span onclick="closeModal()" class="close">&times;</span>
-    	<img src=${image}>
-        <p>${movie.Title}</p>
+    <div class='popup_wrapper'>
+        <div class='popup_left'>
+        	<img class='poster_popup' src=${image}>
+            <h3 class='popup_text'>${movie.Title}</h3>
+            <p class='popup_text'>${movie.Genre}</p>
+            <p class='popup_text'>${movie.Year}</p>
+        </div>
+        <div class=popup_right>
+            <h3 class='popup_text'>Synopsys</h3>
+            <p class='popup_text'>${movie.Plot}</p>
+            <p class='popup_text'>${movie.Awards}</p>
+            <p class='popup_text'>IMdb Rating: ${movie.imdbRating}</p>
+        </div>
+      </div>
     </div>
   </div>
   `;
