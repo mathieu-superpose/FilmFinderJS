@@ -1,4 +1,4 @@
-const apikey = '';//fill your own api key
+const apikey = '285cd719';//fill your own api key
 const result = document.getElementById('result');
 let userquery = document.getElementById('searchbar');
 
@@ -20,14 +20,7 @@ const loadFilmList = (url) => {
 	fetch(url).then(response =>
 			response.json().then(data => {
 				if (data.Response == "True") {
-					data.Search.forEach(film => showFilmList(result, film.Title, film.imdbID));
-					console.log(document.getElementsByClassName('readmorebutton'));
-
-					console.log(document.getElementsByClassName('imglogo')[0]);
-
-					document.getElementsByClassName('imglogo')[0].addEventListener('clic', () => {
-					console.log('coucou');
-					});
+					data.Search.forEach(film => showFilmList(result, film.Title, film.imdbID, film.Poster, film.Year));
 				}
 				if (data.Response == "False") {
 					result.innerHTML = `No film listed`
@@ -36,10 +29,13 @@ const loadFilmList = (url) => {
 
 }
 
-const showFilmList = (selector, name, id) => {
+const showFilmList = (selector, name, id, poster, year) => {
+  if(poster=='N/A')poster='../img/base/placeholder.jpg';
 	selector.innerHTML += `
         <div>
+            <img class="poster" src="${poster}">
             <h2>Title : ${name}</h2>
+            <h class='year'>Year : ${year}</h>
             <button onclick="loadModal('${id}')" class="location-btn" data-toggle="modal" data-target="#movieModal">Readmore</button>
         </div>
     `
