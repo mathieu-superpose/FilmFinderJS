@@ -1,4 +1,4 @@
-const apikey = '285cd719';//fill your own api key
+const apikey = '';//fill your own api key
 const result = document.getElementById('result');
 let userquery = document.getElementById('searchbar');
 
