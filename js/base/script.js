@@ -8,7 +8,7 @@ let userquery = document.getElementById('searchbar');
 
 document.querySelector('#searchbar').addEventListener('keypress', function(e) {
 
-	let url = `http://www.omdbapi.com/?i=&s=${userquery.value}&apikey=${apikey}`;
+	let url = `https://www.omdbapi.com/?i=&s=${userquery.value}&apikey=${apikey}`;
 
 	if (e.key === 'Enter') {
 		emptyFilmList();
@@ -56,7 +56,7 @@ const emptyFilmList = () => {
 
 
 const loadModal = (id) => {
-  let mod = `http://www.omdbapi.com/?i=${id}&apikey=${apikey}`;
+  let mod = `https://www.omdbapi.com/?i=${id}&apikey=${apikey}`;
   fetch(mod)
     .then((response) => response.json())
     .then((data) => openModal(data))
