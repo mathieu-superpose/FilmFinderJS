@@ -13,7 +13,7 @@ Search and display films retrieved from IMDB database
 
 Activate it and copy the key from the email you received.
 
-[Acces the app](https://mathieu-superpose.github.io/FilmFinderJS/), fill your key and start browsing.
+[Access the app](https://mathieu-superpose.github.io/FilmFinderJS/), fill your key and start browsing.
  
 ## Contributors
 
