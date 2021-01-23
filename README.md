@@ -5,7 +5,7 @@
 
 ## Webapp
 
-Search and display film informations retrieved from IMDB database
+Search and display film informations by title, retrieving data from IMDB database
 
 ## How to test
 
